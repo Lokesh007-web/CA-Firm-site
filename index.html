@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CA Harshit Dudeja & Co. – Accounting, GST, Tax &amp; Audit Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--ink:#0f2a43;--mute:#55657a;--line:#dde4ec;--acc:#0e7c66;--acc2:#e9f6f2;--onacc:#fff;--hero:#0f2a43;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1622;--card:#122234;--ink:#e8eef5;--mute:#93a4b8;--line:#223850;--acc:#34c3a1;--acc2:#12302c;--onacc:#06231d;--hero:#0a2a3f}}
+:root[data-theme="dark"]{--bg:#0b1622;--card:#122234;--ink:#e8eef5;--mute:#93a4b8;--line:#223850;--acc:#34c3a1;--acc2:#12302c;--onacc:#06231d;--hero:#0a2a3f}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;font-size:16px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.2;margin:0 0 12px;letter-spacing:-.01em}
+h1{font-size:clamp(32px,6vw,52px);font-weight:800}
+h2{font-size:clamp(25px,4vw,34px);font-weight:800}
+h3{font-size:18px;font-weight:700}
+p{margin:0 0 12px;color:var(--mute)}
+.sub{max-width:62ch;margin-bottom:32px}
+.btn{display:inline-block;background:var(--acc);color:var(--onacc);padding:13px 24px;border-radius:10px;border:0;cursor:pointer;font:inherit;font-weight:700}
+.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:19px}.logo b{color:var(--acc)}
+.links{display:flex;gap:26px;align-items:center;font-weight:500;font-size:15px}
+.links a:hover{color:var(--acc)}
+.links a.btn:hover{color:var(--onacc)}
+.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit}
+.hero{background:var(--hero);color:#fff;padding:80px 0 72px}
+.hero p{color:#c3d3e3}
+.hgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.stats{display:flex;gap:30px;margin-top:36px;flex-wrap:wrap}
+.stats div{font-size:13px;color:#c3d3e3}.stats strong{display:block;font-size:24px;color:#fff}
+.quick{background:var(--card);color:var(--ink);border-radius:16px;padding:24px}
+.quick h3{margin-bottom:4px}.quick p{font-size:14px}
+label{display:block;font-size:14px;font-weight:500;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+.quick .btn{width:100%;margin-top:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;display:block}
+.card .ic{width:42px;height:42px;border-radius:10px;background:var(--acc2);display:grid;place-items:center;font-size:21px;margin-bottom:14px}
+.card p{margin:0;font-size:15px}
+.price{margin-top:12px;font-weight:700;color:var(--acc);font-size:14px}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;list-style:none;padding:0;margin:0}
+.steps li{position:relative;padding-left:48px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--acc);color:var(--onacc);display:grid;place-items:center;font-weight:800}
+.steps p{font-size:15px}
+.tag{font-size:13px;color:var(--acc);font-weight:700}
+.quote p{color:var(--ink);font-size:15px}.quote span{font-size:13px;color:var(--mute)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.info p{color:var(--ink);margin-bottom:8px}
+footer{border-top:1px solid var(--line);padding:26px 0;font-size:14px;color:var(--mute)}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));background:#25d366;color:#05301a;font-weight:800;padding:13px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:30}
+#msg{margin-top:10px;font-size:14px;color:var(--acc);min-height:20px}
+@media (max-width:820px){
+.hgrid,.cgrid{grid-template-columns:1fr}
+.menu{display:block}
+.links{display:none;position:absolute;left:0;right:0;top:100%;background:var(--card);flex-direction:column;align-items:flex-start;padding:16px 20px;border-bottom:1px solid var(--line);gap:14px}
+.links.open{display:flex}
+section{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="#top" class="logo"><b>CA Harshit Dudeja & Co.</b></a>
+<button class="menu" id="menu" aria-expanded="false" aria-label="Open menu">Menu</button>
+<nav class="links" id="links">
+<a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a href="#insights">Insights</a><a href="#faq">FAQ</a>
+<a href="#contact" class="btn" style="padding:9px 18px">Book a Consultation</a>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap hgrid">
+<div>
+<h1>Accounting, GST and tax, handled with precision.</h1>
+<p>We help individuals, startups and growing businesses stay compliant, reduce tax liability and make confident financial decisions, with clear communication and on-time delivery.</p>
+<div class="acts"><a href="#contact" class="btn">Book a Free Consultation</a><a href="#services" class="btn ghost">Explore Services</a></div>
+<div class="stats"><div><strong>500+</strong>Clients served</div><div><strong>10+ years</strong>Of experience</div><div><strong>24 hours</strong>Response time</div></div>
+</div>
+<form class="quick" id="quick">
+<h3>Need quick help?</h3><p>Fill in the form and your message will open directly in WhatsApp.</p>
+<label for="qn">Your name</label><input id="qn" required autocomplete="name">
+<label for="qs">How can we help?</label>
+<select id="qs"><option>Accounting &amp; Bookkeeping</option><option>GST Registration &amp; Filing</option><option>Income Tax Return (ITR)</option><option>Audit &amp; Assurance</option><option>Company / LLP Registration</option><option>Something else</option></select>
+<button class="btn" type="submit">Send on WhatsApp</button>
+</form>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>Our Services</h2><p class="sub">End-to-end financial and compliance support for individuals, small businesses and companies. Final fees depend on the scope of work.</p>
+<div class="grid">
+<div class="card"><div class="ic">📒</div><h3>Accounting &amp; Bookkeeping</h3><p>Accurate day-to-day books, Tally entries, reconciliations and monthly MIS reports.</p><div class="price">From ₹1,500 per month</div></div>
+<div class="card"><div class="ic">🧾</div><h3>GST Registration &amp; Filing</h3><p>New registration, GSTR-1 and GSTR-3B filing, annual returns and notice replies.</p><div class="price">From ₹800 per return</div></div>
+<div class="card"><div class="ic">📄</div><h3>Income Tax Return (ITR)</h3><p>Correct and timely filing for salaried individuals, professionals and businesses.</p><div class="price">From ₹999</div></div>
+<div class="card"><div class="ic">🔍</div><h3>Audit &amp; Assurance</h3><p>Tax audit, statutory audit and internal audit support with detailed reporting.</p><div class="price">Custom quote</div></div>
+<div class="card"><div class="ic">🏢</div><h3>Company / LLP Registration</h3><p>Private Limited, LLP, MSME and Udyam registration with complete documentation.</p><div class="price">From ₹4,999</div></div>
+<div class="card"><div class="ic">💡</div><h3>Tax Planning &amp; Advisory</h3><p>Lawful tax-saving strategies and practical guidance to structure and grow your business.</p><div class="price">First consultation free</div></div>
+</div></div></section>
+
+<section id="process" class="alt"><div class="wrap">
+<h2>How We Work</h2><p class="sub">A simple, transparent process from first call to final delivery.</p>
+<ol class="steps">
+<li><h3>Discuss</h3><p>Share your requirements in a free consultation.</p></li>
+<li><h3>Submit documents</h3><p>Send documents securely by WhatsApp or email.</p></li>
+<li><h3>We execute</h3><p>Your work is completed accurately and before the deadline.</p></li>
+<li><h3>Confirmation</h3><p>You receive acknowledgements and copies of all filings.</p></li>
+</ol></div></section>
+
+<section id="about"><div class="wrap grid" style="align-items:start">
+<div><h2>About Us</h2><p>We are a team of experienced finance professionals dedicated to taking the burden of accounts and compliance off business owners. Our goal is simple: give every client clear advice, accurate work and a reliable point of contact.</p></div>
+<div class="card"><h3>Why clients choose us</h3><p>✔ On-time delivery, every time<br>✔ Transparent, fixed pricing<br>✔ Strict confidentiality of your data<br>✔ Support in English and Hindi</p></div>
+</div></section>
+
+<section id="insights" class="alt"><div class="wrap">
+<h2>Latest Insights</h2><p class="sub">Practical guidance on tax, GST and business compliance.</p>
+<div class="grid">
+<a class="card" href="#contact"><span class="tag">GST</span><h3>What happens if you file GST returns late?</h3><p>Late fees, interest and how to avoid penalties.</p></a>
+<a class="card" href="#contact"><span class="tag">Income Tax</span><h3>Documents required to file your ITR</h3><p>A checklist to complete before you file.</p></a>
+<a class="card" href="#contact"><span class="tag">Business</span><h3>Private Limited or LLP: which is right for you?</h3><p>A clear comparison of benefits and trade-offs.</p></a>
+</div></div></section>
+
+<section id="testimonials"><div class="wrap">
+<h2>What Clients Say</h2><p class="sub">Sample testimonials. Replace with your real client reviews.</p>
+<div class="grid">
+<div class="card quote"><p>“Our GST filings are now always on time. Communication is clear and the team is very responsive.”</p><span>Client Name, Retail Business</span></div>
+<div class="card quote"><p>“Professional, accurate and affordable. They made our company registration completely hassle-free.”</p><span>Client Name, Startup Founder</span></div>
+<div class="card quote"><p>“I finally understand my tax position and how to plan better. Highly recommended.”</p><span>Client Name, Consultant</span></div>
+</div></div></section>
+
+<section id="faq" class="alt"><div class="wrap" style="max-width:760px">
+<h2>Frequently Asked Questions</h2><br>
+<details><summary>Is the first consultation free?</summary><p>Yes. Your first discussion with us is free and carries no obligation.</p></details>
+<details><summary>How do I share my documents?</summary><p>You can send them securely via WhatsApp or email, or visit our office.</p></details>
+<details><summary>How long does the work take?</summary><p>Most filings are completed within 1 to 3 working days. Registrations may take longer depending on government processing.</p></details>
+<details><summary>Do you serve clients across India?</summary><p>Yes. Our online process lets us support clients in any city.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap cgrid">
+<div class="info"><h2>Get in Touch</h2><p class="sub">Send us your query and we will respond within 24 hours.</p>
+<p>📞 <a href="tel:+919999999999">+91 99999 99999</a></p>
+<p>✉️ <a href="mailto:info@example.com">info@example.com</a></p>
+<p>📍 Your office address, City, State</p>
+<p>🕘 Monday to Saturday, 10:00 AM to 7:00 PM</p></div>
+<form class="card" id="cf">
+<label for="n">Full name</label><input id="n" required autocomplete="name">
+<label for="p">Phone number</label><input id="p" type="tel" required autocomplete="tel">
+<label for="m">Your message</label><textarea id="m" rows="4" required></textarea>
+<button class="btn" type="submit" style="margin-top:16px">Send Message</button>
+<div id="msg" role="status"></div>
+</form></div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Your Firm Name. All rights reserved.</div></footer>
+<a class="wa" id="wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+// Set your WhatsApp number here (with country code, no + or spaces)
+var PHONE="919999999999";
+function wa(t){return "https://wa.me/"+PHONE+"?text="+encodeURIComponent(t)}
+document.getElementById("wa").href=wa("Hello, I would like to know more about your services.");
+document.getElementById("quick").addEventListener("submit",function(e){e.preventDefault();
+window.open(wa("Hello, my name is "+qn.value+". I need help with: "+qs.value+"."),"_blank")});
+document.getElementById("cf").addEventListener("submit",function(e){e.preventDefault();
+window.open(wa("Name: "+n.value+"\nPhone: "+p.value+"\nMessage: "+m.value),"_blank");
+document.getElementById("msg").textContent="Thank you! WhatsApp has opened. Please send the message there."});
+var mb=document.getElementById("menu"),lk=document.getElementById("links");
+mb.addEventListener("click",function(){var o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+lk.addEventListener("click",function(){lk.classList.remove("open")});
+</script>
+</body>
+</html>
